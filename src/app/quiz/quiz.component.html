@@ -1,0 +1,10 @@
+<div class="quiz-container">
+  <h1>Welcome to Angular Quiz</h1>
+  <div class="card-container" >
+    <div class="card" *ngFor="let ques of questions">
+      <button class="custom_button" (click)="naviagteToQuizPage(ques.id)" >Start</button>
+      <h3 class="quiz-list">{{ques.name}}</h3>
+      <p>{{ques.description}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+<div class="form_container">
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit(registrationForm.value, registrationForm.valid)">
+    <h1>Registration Form</h1>
+    <div class="flex-container">
+      <div class="form_group flex-item-left">
+        <label>First Name</label>
+        <input class="form_control" #firstName formControlName="firstName" />
+        <span class="error" *ngIf="(formControls.firstName.touched || isSubmitted) && formControls.firstName.invalid">
+          <span *ngIf="formControls.firstName?.errors?.required">First Name is required</span>
+        </span>
+      </div>
+      <div class="form_group flex-item-right">
+        <label>Last Name</label>
+        <input class="form_control" formControlName="lastName" />
+        <span class="error" *ngIf="(formControls.lastName.touched || isSubmitted) && formControls.lastName.invalid">
+          <span *ngIf="formControls.lastName?.errors?.required">Last Name is required</span>
+        </span>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="form_group flex-item-left">
+        <label>Email ID</label>
+        <input class="form_control" formControlName="emailID" />
+        <span class="error" *ngIf="(formControls.emailID.touched || isSubmitted) && formControls.emailID.invalid">
+          <span *ngIf="formControls.emailID?.errors?.required">Email ID is reuired</span>
+          <span *ngIf="formControls.emailID?.errors?.pattern">Please enter valid Email ID</span>
+        </span>
+      </div>
+      <div class="form_group flex-item-right">
+        <label>Gender</label>
+        <div>
+          <label class="radio-container">Male
+            <input type="radio" value="male" formControlName="gender">
+            <span class="checkmark"></span>
+          </label>
+          <label class="radio-container">Female
+            <input type="radio" value="female" formControlName="gender">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <span class="disp-blk error" *ngIf="(formControls.gender.touched || isSubmitted) && formControls.gender.invalid">
+          <span *ngIf="formControls.gender?.errors?.required">Gender is Required</span>
+        </span>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="form_group flex-item-left">
+        <label>Designation</label>
+        <div class="box">
+          <select formControlName="designation">
+            <option value="ss">Software Trainee</option>
+            <option value="ss">Frontend Developer</option>
+            <option value="ss">Backend Developer</option>
+            <option value="ss">Senior Frontend Developer</option>
+            <option value="ss">Senior Backend Developer</option>
+          </select>
+        </div>
+        <span class="error" *ngIf="(formControls.designation.touched || isSubmitted) && formControls.designation.invalid">
+          <span *ngIf="formControls.designation?.errors?.required">Designation is Required</span>
+        </span>
+      </div>
+      <div class="form_group flex-item-right">
+        <label>Experience <img class="help" src="../../assets/i-icon.png" width="10" height="10" alt="information">
+          <span class="hide">Experience should be between 2 to 5 and should be numbers no special characters
+            needed
+          </span>
+        </label>
+        <input class="form_control" formControlName="experience" numbersOnly />
+        <span class="error" *ngIf="(formControls.experience.touched || isSubmitted) && formControls.experience.invalid">
+          <span *ngIf="formControls.experience?.errors?.required">Experience is Required</span>
+          <span *ngIf="formControls.experience?.errors?.minMax">Experience should be between 2 to 5</span>
+        </span>
+      </div>
+    </div>
+    <div class="center">
+      <button class="clear-form" (click)="clearForm()">Clear</button>
+      <button (click)="onSubmit(registrationForm.value, registrationForm.valid)">Submit</button>
+    </div>
+  </form>
+</div>

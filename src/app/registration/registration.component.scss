@@ -1,0 +1,120 @@
+form {
+  padding: 2px;
+  background-color: #f1f1f1;
+  padding-bottom: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  h1 {
+    text-align: center;
+  }
+  .form_group {
+    margin-bottom: 15px;
+    label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+    .form_control {
+      display: block;
+      width: 90%;
+      padding: 14px 8px;
+      font-size: 14px;
+      height: 10px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    }
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+
+    .flex-item-left {
+      background-color: #f1f1f1;
+      padding: 2px;
+      flex: 45%;
+      padding-left: 10px;
+    }
+
+    .flex-item-right {
+      background-color: #f1f1f1;
+      padding: 2px;
+      flex: 45%;
+    }
+  }
+  .center {
+    margin-left: 40%;
+    position: absolute;
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 6px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer !important;
+      font-weight: 700;
+      border-radius: 5px;
+    }
+    .clear-form {
+      background-color: white !important;
+      color: black;
+    }
+  }
+  .help {
+    background-image: url('../../assets/i-icon.png');
+    width: 10px;
+    height: 10px;
+  }
+  .hide {
+    display: none;
+    position: absolute;
+    border: 1px solid #e2e225;
+    color: white;
+    font-size: 12px;
+    width: 20%;
+    margin: -13px 0 0 92px;
+    border-radius: 5px;
+    background-color: #c5c51e;
+    padding: 2px;
+  }
+
+  .help:hover + .hide {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    margin: 0 -20px !important;
+    padding-bottom: 5px !important;
+    .flex-container {
+      flex-direction: column !important;
+    }
+    .flex-item-left {
+      padding-left: 10px !important;
+    }
+    .flex-item-right {
+      padding-left: 10px !important;
+    }
+    .center {
+      margin-left: 0% !important;
+      position: static !important;
+      button {
+        display: initial !important;
+        width: 50% !important;
+        padding: 14px 28px !important;
+        font-size: 16px !important;
+        margin: 0 !important;
+      }
+    }
+  }
+}

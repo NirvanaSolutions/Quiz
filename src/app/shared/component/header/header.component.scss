@@ -1,0 +1,22 @@
+.top {
+  background-color: black;
+  .contact {
+    color: #e4e4e4;
+    padding: 2px 2px;
+    img {
+      position: relative;
+      padding: 0 10px;
+      top: 2px;
+    }
+  }
+}
+.header-main {
+  background-color: white;
+}
+:host {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+}

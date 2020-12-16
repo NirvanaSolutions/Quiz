@@ -1,0 +1,250 @@
+{
+  "registration": [
+    {
+      "firstName": "Arun",
+      "lastName": " Gupta",
+      "emailID": "arun.gupta@gmail.com",
+      "gender": "Male",
+      "designation": "Software Engineer",
+      "experience": "4",
+      "id": 3
+    },
+    {
+      "firstName": "Arun",
+      "lastName": "test",
+      "emailID": "abaa@gmal.com",
+      "gender": "male",
+      "designation": "sse",
+      "experience": "4",
+      "id": 4
+    },
+    {
+      "firstName": "Arun",
+      "lastName": "test",
+      "emailID": "abaa@gmal.com",
+      "gender": "male",
+      "designation": "sse",
+      "experience": "4",
+      "id": 5
+    },
+    {
+      "firstName": "abbab",
+      "lastName": "sbbs",
+      "emailID": "abab@gmail.com",
+      "gender": "Male",
+      "designation": "se",
+      "experience": "2",
+      "id": 6
+    },
+    {
+      "firstName": "abbab",
+      "lastName": "sbbs",
+      "emailID": "abab@gmail.com",
+      "gender": "Male",
+      "designation": "se",
+      "experience": "2",
+      "id": 7
+    },
+    {
+      "firstName": "Arun",
+      "lastName": "test",
+      "emailID": "sbsbs@gmail.com",
+      "gender": "Male",
+      "designation": "sse",
+      "experience": "4",
+      "id": 8
+    },
+    {
+      "firstName": "Arun",
+      "lastName": "test",
+      "emailID": "sbsbs@gmail.com",
+      "gender": "Male",
+      "designation": "sse",
+      "experience": "4",
+      "id": 9
+    },
+    {
+      "firstName": "hhfhfqh",
+      "lastName": "hdhdhd",
+      "emailID": "sss@ss.ss",
+      "gender": "male",
+      "designation": "Backend Developer",
+      "experience": "5",
+      "id": 10
+    },
+    {
+      "firstName": "hhfhfqh",
+      "lastName": "hdhdhd",
+      "emailID": "sss@ss.ss",
+      "gender": "male",
+      "designation": "Backend Developer",
+      "experience": "5",
+      "id": 11
+    },
+    {
+      "firstName": "ffg",
+      "lastName": "ffgf",
+      "emailID": "dgdfg@dsf.sdf",
+      "gender": "female",
+      "designation": "Frontend Developer",
+      "experience": "4",
+      "id": 12
+    },
+    {
+      "firstName": "ffg",
+      "lastName": "ffgf",
+      "emailID": "dgdfg@dsf.sdf",
+      "gender": "female",
+      "designation": "Frontend Developer",
+      "experience": "4",
+      "id": 13
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "name": "Routing",
+      "description": "The quiz contains the questions related to Angular routing"
+    },
+    {
+      "id": 2,
+      "name": "Directive",
+      "description": "The quiz contains the questions related to Angular directives"
+    },
+    {
+      "id": 3,
+      "name": "Service",
+      "description": "The quiz contains the questions related to Angular service"
+    },
+    {
+      "id": 4,
+      "name": "NGRX Store",
+      "description": "The quiz contains the questions related to NGRX store"
+    }
+  ],
+  "quiz_1": {
+    "name": "Angular Routing",
+    "questions": [
+      {
+        "id": 1,
+        "quiz_id": 1,
+        "question": "In Angular 2 . . . . . . . . . . represents an event triggered when a navigation starts.",
+        "options": "RouteStart,RouteInitial,NavigationStart,NavigateStart"
+      },
+      {
+        "id": 2,
+        "quiz_id": 1,
+        "question": "There are four different guard types we can use to protect our routes, one of these is ?",
+        "options": "CanLoad,CanStart,CanNavigate,CanStop"
+      },
+      {
+        "id": 3,
+        "quiz_id": 1,
+        "question": "RouterModule.forChild creates a module that contains all the directives and the given routes, and the router service.",
+        "options": "True,False"
+      },
+      {
+        "id": 4,
+        "quiz_id": 1,
+        "question": "The . . . . . . . . . . directive is used to display views for a given route.",
+        "options": "RouterAngle,RouterLink,RouterState,RouterOutlet"
+      },
+      {
+        "id": 5,
+        "quiz_id": 1,
+        "question": "Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+        "options": "pipes,modules,variables,parameters"
+      }
+    ]
+  },
+  "quiz_2": {
+    "name": "Angular Directive",
+    "questions": [
+      {
+        "id": 1,
+        "quiz_id": 2,
+        "question": "In Angular 2 . . . . . . . . directive allows us to iterate through a collection.",
+        "options": "NgRepeat,NgWhile,NgIf,NgFor"
+      },
+      {
+        "id": 2,
+        "quiz_id": 2,
+        "question": "Which directive changes the behaviour of the DOM ?",
+        "options": "advanced directives,attribute directives,structural directives,components"
+      },
+      {
+        "id": 3,
+        "quiz_id": 2,
+        "question": "How would you conditionally use one template over another based on a Boolean expression ?",
+        "options": "ngIf,ngTemplate,ngFor,ng-container"
+      },
+      {
+        "id": 4,
+        "quiz_id": 2,
+        "question": "How would you implement ngClass if you want IF/ELSE logic ?",
+        "options": "As a text,As an expression,As a style,As an object"
+      },
+      {
+        "id": 5,
+        "quiz_id": 2,
+        "question": "Command to create a custom directive in Angular ?",
+        "options": "ng new directive directive_name,ng g directive directive_name,ng new d directive_name,ng generate custom-directive directive_name"
+      }
+    ]
+  },
+  "quiz_3": {
+    "name": "Angular Service",
+    "questions": [
+      {
+        "id": 1,
+        "quiz_id": 3,
+        "question": "Observables help you manage . . . . . . . . data.",
+        "options": "synchronous,asynchronous,Both asynchronous & synchronous,None of above"
+      },
+      {
+        "id": 2,
+        "quiz_id": 3,
+        "question": "How would you retrieve a list of items from a server's URL ?",
+        "options": "Create a URL transaction,Use the HTTP get method,Create a get SQL statement,Use an HTTP package"
+      },
+      {
+        "id": 3,
+        "quiz_id": 3,
+        "question": "How would you conditionally use one template over another based on a Boolean expression ?",
+        "options": "ngIf,ngTemplate,ngFor,ng-container"
+      },
+      {
+        "id": 4,
+        "quiz_id": 3,
+        "question": "How would you implement ngClass if you want IF/ELSE logic ?",
+        "options": "As a text,As an expression,As a style,As an object"
+      },
+      {
+        "id": 5,
+        "quiz_id": 3,
+        "question": "Command to create a service in Angular ?",
+        "options": "ng new service service_name,ng generate new service service_name,ng new s service_name,ng generate service service_name"
+      }
+    ]
+  },
+  "user-quiz-score": {
+    "quiz_id": "1",
+    "mappings": [
+      {
+        "ques_id": "RouteStart"
+      },
+      {
+        "ques_id": "CanStart"
+      },
+      {
+        "ques_id": "False"
+      },
+      {
+        "ques_id": "RouterLink"
+      },
+      {
+        "ques_id": "pipes"
+      }
+    ]
+  }
+}
